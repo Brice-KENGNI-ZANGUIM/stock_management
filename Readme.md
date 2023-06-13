@@ -31,7 +31,7 @@ from stock_manager.stock_management import Stock_Management
 
 ## 4. Usage
 
-<u> **MANAGE ITEMS** </u> 
+<u> **a- MANAGE ITEMS** </u> 
 
 To create an instance of item you will need to provide two values: the **name** and the **quantity** of the item.
 Here is an exemple of how to create an item name **chocolate** with **120** units of the item
@@ -47,7 +47,7 @@ You can make some basic operations like **adding 20 units** of chocolates
 chocolate.augment_quantity(quantity = 20)
 
 ```
-<u> **MANAGE STOCKS** </u> 
+<u> **b- MANAGE STOCKS** </u> 
 
 To deal will stock you first have to create an instance of a stock by like this for exemple
 
