@@ -11,7 +11,7 @@ Run the following code in a terminal to install the **stock management** package
 $ pip install stock-manager
 ```
 
-## 2. Availables dimensions
+## 2. Availables objects
 
 in this package version, you have the ability to generate class of : 
 <ul>
