@@ -4,11 +4,11 @@ with open("./Readme.md", "r") as rf :
     long_description = rf.read()
 
 setup(
-    name = "stock-manager",
+    name = "stock-management",
     version = "0.0.1",
 
-    package_dir= {"":"stock_manager"},
-    packages= find_packages(where="stock_manager"),
+    package_dir= {"":"stock_management"},
+    packages= find_packages(where="stock_management"),
 
     description = "A python package with multiple class and method for stock management",
     long_description= long_description,

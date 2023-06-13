@@ -1,4 +1,4 @@
-from stock_manager.stock_item import StockItem
+from stock_management.stock_item import StockItem
 
 import stock_manager
 

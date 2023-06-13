@@ -8,7 +8,7 @@ For exemple dealing with different type of items and stocks.
 Run the following code in a terminal to install the **stock management** package in you python environnement
 
 ```bash
-$ pip install stock-manager
+$ pip install stock-management
 ```
 
 ## 2. Availables objects
@@ -24,8 +24,8 @@ in this package version, you have the ability to generate class of :
 Here is how you can simply create an instance of item or stock after installing the package
 ```python
 
-from stock_manager.stock_item import Stock_Item
-from stock_manager.stock_management import Stock_Management
+from stock_management.stock_item import Stock_Item
+from stock_management.stock_management import Stock_Management
 
 ```
 
@@ -37,7 +37,7 @@ To create an instance of item you will need to provide two values: the **name** 
 Here is an exemple of how to create an item name **chocolate** with **120** units of the item
 
 ```python
-from stock_manager.stock_item import Stock_Item
+from stock_management.stock_item import Stock_Item
 chocolate = Stock_Item( name = "chocolate" , quantity = 120)
 
 ```
@@ -52,7 +52,7 @@ chocolate.augment_quantity(quantity = 20)
 To deal will stock you first have to create an instance of a stock by like this for exemple
 
 ```python
-from stock_manager.stock_management import Stock_Management
+from stock_management.stock_management import Stock_Management
 
 stock = Stock_Management( )
 
