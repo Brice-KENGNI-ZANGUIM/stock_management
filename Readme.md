@@ -1,6 +1,7 @@
 # conversion-units
 This package is build for **stock managment.**
-It provide a collection ofon of methods and class to mimic approch the problem of stock management. 
+It provide a collection of methods and class to mimic approch the problem of stock management.
+For exemple dealing with different type of items and stocks.
 
 ## 1. Installation
 
