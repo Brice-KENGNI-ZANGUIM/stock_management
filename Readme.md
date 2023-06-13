@@ -15,8 +15,8 @@ $ pip install stock-manager
 
 in this package version, you have the ability to generate class of : 
 <ul>
-    <li> Items   </li>
-    <li> Stocks   </li>
+    <li> **Items : ** it can be for exemple cars, dors, apple, tomatos, bred, shoes, pen, book . . .etc   </li>
+    <li> **Stocks**   </li>
 </ul>
 
 ## 3. Import
