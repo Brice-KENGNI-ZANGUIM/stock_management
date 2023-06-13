@@ -1,7 +1,6 @@
 # conversion-units
 This package is build for **stock managment.**
 It provide a collection ofon of methods and class to mimic approch the problem of stock management. 
-Yet i start with only 4 physical size namely <strong> distance, time, mass and temperature </strong>
 
 ## 1. Installation
 
