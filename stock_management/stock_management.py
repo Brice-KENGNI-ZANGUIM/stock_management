@@ -18,6 +18,7 @@ class Stock_Management ( ) :
                 Initialise the stock object by providing an empty dictionnary
         """
         self.stock = {}
+        self.__status__ = {}
 
     def add_item ( self , name:str , quantity:int) -> None :
         """
@@ -45,6 +46,9 @@ class Stock_Management ( ) :
         # if it already exist, then we update the quantity related
         else : 
             self.update_item_quantity(name = name , quantity = quantity )
+
+        # update stock status
+        self.__status__[name] = quantity
 
     def remove_item ( self , name : str) -> None : 
         """
@@ -185,4 +189,4 @@ class Stock_Management ( ) :
                 >>> stock.get_stock_status( )
         """
 
-        return { val.name : val.quantity  for val in self.stock.values()}
+        return { val.name : val.quantity  for val in self.stock.values() }
