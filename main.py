@@ -1,14 +1,14 @@
-from stock_management.stock_item import StockItem
-
-import stock_manager
+from stock_management.stock_item import Stock_Item 
+from stock_management.stock_management import Stock_Management
 
 if __name__ == "__main__" :
-    item = StockItem("Chocolate" , 200)
-    item.reduce_quantity(120)
-    item.reduce_quantity(100)
+    item = Stock_Item("Chocolate" , 200)
     print(item.quantity)
 
-    dic = { "a" : 1 , "b" : 2 , "c" : 3}
-    del dic["a"]
+    stock = Stock_Management( )
+    stock.add_item( "tesla" ,23)
+    stock.add_item ( "car" , 63)
+    stock.add_item( "pen" , 75)
+    stock.add_item( "table" , 523)
 
-    print(dic)
+    print(stock.get_stock_status())

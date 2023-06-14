@@ -36,7 +36,7 @@ class Stock_Item ( ):
                 - quantity : int
                     the quantity of item to add from the one available
         """
-        self.quantity += quantity
+        self.quantity += abs(quantity)
 
     def reduce_quantity ( self , quantity : int) -> None :
         """
@@ -51,23 +51,10 @@ class Stock_Item ( ):
         """
 
         if self.quantity >= abs(quantity) : 
-            self.quantity -= quantity
+            self.quantity -= abs(quantity)
         else : 
-            raise ValueError( f"Sorry but you can't take more than {self.quantity} {self.name}" )
-
-
-    def get_item_status ( self) -> None :
-        """
-            DESCRIPTION :  
-            ------------
-                send the status of the item in stock, namely it return a dictionary of key the name of the item and value the remain quantity in stock
-            RETURN : 
-            -------
-                dict : dictionary { name : quantity }
-        """
-        return { self.name : self.quantity}
+            raise ValueError( f"you want to remove {quantity} {self.name} but you can't remove more than {self.quantity} {self.name}" )
 
     def __quantity_status__ ( self ) -> bool :
 
         return self.quantity > 0 
-            
